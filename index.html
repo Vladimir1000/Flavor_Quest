@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavor Quest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flavor Quest</h1>
+        <div class="search-container">
+            <form onSubmit="return search(search_term)">
+                <input type="text" name="search_term" id="search-input" placeholder="Enter ingredients...">
+                <button id="search-btn">Search</button>
+            </form>
+        </div>
+        <div id="results-container">
+            <!-- Results will be displayed here -->
+        </div>
+        <div id="detailed-results">
+            <div id="left">
+
+            </div>
+            <div id="right">
+                
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
